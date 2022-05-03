@@ -1,0 +1,173 @@
+---
+sidebar: sidebar 
+permalink: reference-supported-configs.html 
+keywords: ec2, instance, type, vm, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations 
+summary: AWS和Azure提供多種組態的可用範本。Cloud Volumes ONTAP 
+---
+= 支援的組態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+AWS和Azure提供下列兩種定價選項：隨用隨付及自帶授權（BYOL）Cloud Volumes ONTAP 。對於隨用隨付的方案、您可以從三種組態中選擇：Explore、Standard或Premium。
+
+
+
+== AWS 適用的 Cloud Volumes ONTAP
+
+在AWS中、Cloud Volumes ONTAP 您可以將效能資料部署為單一節點系統或HA配對。
+
+[cols="h,d,d,d,d"]
+|===
+|  | 瀏覽 | 標準 | 優質 | BYOL 
+
+
+| EC2執行個體類型  a| 
+* m4.xlarge
+* M5.xLarge
+
+ a| 
+* m4.2xLarge
+* m5.2xLarge
+* r4.xlarge
+* R5.xlarge
+
+ a| 
+* c4.4xlarge
+* c4.8xlarge
+* c5d.4xllarge *
+* c5d.9xllar*
+* m4.4xlarge
+* M5.4xLarge
+* r4.2xlarge
+* r5.2xlarge
+* r5d.2xlarge *
+
+ a| 
+* c4.4xlarge
+* c4.8xlarge
+* c5d.4xllarge *
+* c5d.9xllar*
+* m4.xlarge
+* m4.2xLarge
+* m4.4xlarge
+* M5.xLarge
+* m5.2xLarge
+* M5.4xLarge
+* r4.xlarge
+* r4.2xlarge
+* R5.xlarge
+* r5.2xlarge
+* r5d.2xlarge *
+
+
+
+
+| 基礎儲存設備 4+| 通用SSD（gp2）、已配置的IOPS SSD（IO1）和處理量最佳化HDD（ST1）、每個磁碟最多16 TiB 
+
+
+| 最大系統容量（磁碟+物件儲存） | 2 TiB | 10 TiB | 368TiB | 每個授權368TiB 
+|===
+附註：
+
+. 以*表示的執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 此儲存設備用作_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。 link:reference-limitations.html#flash-cache-limitations["深入瞭解"]。
+. 在某些組態中、磁碟限制會讓您無法單獨使用磁碟、達到3668 TiB容量限制。在這些情況下、您可以達到3668 TiB容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。如需磁碟限制的相關資訊、請參閱 link:reference-storage-limits.html["儲存限制"]。
+. 如果您啟用資料分層、系統的容量限制會維持不變。容量限制包括磁碟和物件儲存設備。
+. 支援資料分層功能的Cloud Volumes ONTAP 功能包括：
+. 當您選擇EC2執行個體類型時、可以指定它是共用執行個體或專屬執行個體。
+. HA配對不支援冷硬碟。
+. 使用EBS SSD搭配Cloud Volumes ONTAP 使用時、可啟用增強的寫入效能、包括ESSE- Standard、Premium和BYOL。
+. 如需AWS區域支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+
+
+
+
+== 適用於 Azure Cloud Volumes ONTAP
+
+在Azure中、Cloud Volumes ONTAP 您可以將不完整的功能部署為單一節點系統或HA配對。
+
+
+
+=== 單一節點系統
+
+當您在Cloud Volumes ONTAP Azure中部署以單節點系統的方式部署時、可以從下列組態中進行選擇：
+
+[cols="h,d,d,d,d"]
+|===
+|  | 瀏覽 | 標準 | 優質 | BYOL 
+
+
+| 虛擬機器類型 | DS3_v2  a| 
+* DS4_v2
+* DS13_v2
+
+ a| 
+* DS5_v2
+* DS14_v2
+
+ a| 
+* DS3_v2
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+
+
+
+
+| 基礎儲存設備 4+| 標準HDD託管磁碟、標準SSD託管磁碟和優質SSD託管磁碟、每個磁碟最多32 TiB 
+
+
+| 最大系統容量（磁碟+物件儲存） | 2 TiB | 10 TiB | 368TiB | 每個授權368TiB 
+|===
+附註：
+
+. 如果您啟用資料分層、系統的容量限制會維持不變。容量限制包括磁碟和物件儲存設備。
+. DS3_v2虛擬機器類型不支援資料分層。
+. 使用Azure Premium Storage磁碟時會啟用增強寫入效能、但使用DS3_v2虛擬機器類型時則不會啟用。
+. 如需Azure地區支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+
+
+
+
+=== HA 配對
+
+在Cloud Volumes ONTAP Azure中部署以HA配對形式部署的時、您可以從下列組態中進行選擇：
+
+[cols="h,d,d,d,d"]
+|===
+|  | 瀏覽 | 標準 | 優質 | BYOL 
+
+
+| 虛擬機器類型 | 不支援  a| 
+* DS4_v2
+* DS13_v2
+
+ a| 
+* DS5_v2
+* DS14_v2
+
+ a| 
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+
+
+
+
+| 基礎儲存設備 | 不支援 3+| 優質頁面配置、每個磁碟最多8個TiB 
+
+
+| 最大系統容量 | 不支援 | 10 TiB | 368TiB | 每個授權368TiB 
+|===
+附註：
+
+. HA配對不支援資料分層。
+. 如需Azure地區支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+
