@@ -76,9 +76,7 @@
   <block id="794df3791a8c800841516007427a2aa3" category="cell">授權</block>
   <block id="643a529396d04bbbe61c8daa70456163" category="cell">最大系統容量（磁碟+物件儲存）</block>
   <block id="768560d8110ed230b7fde848941af107" category="cell">2 TiB（Explore不支援資料分層）</block>
-  <block id="2f9882645b2c32820ad085240bacb763" category="section-title">對於HA、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="44007958b04e5e15a25a3ca1ee98abeb" category="paragraph">容量限制適用於整個HA配對。不是每個節點。例如、如果您使用Premium授權、則兩個節點之間最多可有368TiB的容量。</block>
-  <block id="fc9a388cd18c69244f22554de6f0d544" category="section-title">對於AWS中的HA系統、鏡射資料是否會根據容量限制計算？</block>
   <block id="8644b747d80d3144a35c2f7a3eb37c2e" category="paragraph">不、這不需要。AWS HA配對中的資料會在節點之間同步鏡射、以便在發生故障時提供資料。例如、如果您在節點A上購買8個TiB磁碟、Cloud Manager也會在節點B上配置8個TiB磁碟、用於鏡射資料。雖然已配置16個TiB容量、但根據授權上限只計算8個TiB。</block>
   <block id="0cdb1f70c4440ec9777490ad7091543c" category="section-title">AWS EC2執行個體的容量和磁碟限制</block>
   <block id="55cf9e2321fbdbbee6d9396af8ae9a4f" category="paragraph">使用EBS磁碟區做為磁碟。Cloud Volumes ONTAP下列磁碟限制僅適用於包含使用者資料的磁碟。限制不包括開機磁碟和根磁碟。</block>
@@ -118,8 +116,6 @@
   <block id="03afdbd66e7929b125f8597834fa83a4" category="cell">63.</block>
   <block id="5eea1e25ada5f639be60cd3747453706" category="admonition">對於某些VM類型、您需要數個BYOL授權、才能達到下列系統容量上限。例如、您需要6份BYOL授權、才能使用DS5_v2達到2個PIB。</block>
   <block id="caa04f6c0c961ead7ba1a22b65f58bb8" category="cell">480 TiB</block>
-  <block id="cfd3d7471481ba0d3a23470409857d68" category="cell">992 TiB</block>
-  <block id="9010e525ec80d0fdea3d56191f64ce39" category="cell">2 PIB</block>
   <block id="7d77a94398a1ae91747e4416328465b2" category="cell">HA配對的實體磁碟MAX Data</block>
   <block id="f09d01e9299f4f1d66eff1fb0b840c5c" category="cell">DS15_v2</block>
   <block id="66d1b90f80769239ea0e95b22a8f3e04" category="admonition">對於某些VM類型、您需要數個BYOL授權、才能達到下列系統容量上限。例如、您需要3份BYOL授權、才能使用DS5_v2達到1個PIB。</block>
@@ -390,7 +386,6 @@
   <block id="77fc7cf72a29c8c6c88ed457fcdd2f3c" category="list-text">您可以從Cloud Volumes ONTAP 9.4版升級至S49.5版。</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。</block>
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
   <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">版本資訊首頁</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
@@ -402,4 +397,5 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">解決方案ONTAP</block>
+  <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896 TiB</block>
 </blocks>
