@@ -196,7 +196,7 @@ https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption（NVE）"^
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何設定NetApp Volume Encryption"^]
 
 
-NOTE: NetApp Volume Encryption是一種不同Cloud Volumes ONTAP 於以集合體層級加密資料的功能、現在已不再使用。無法在這兩種加密技術之間進行升級。請參閱 <<Deprecated features in AWS>> 以取得更多資訊。
+NOTE: NetApp Volume Encryption是一種不同Cloud Volumes ONTAP 於以集合體層級加密資料的功能、現在已不再使用。無法在這兩種加密技術之間進行升級。請參閱  features in AWS 以取得更多資訊。
 
 
 
