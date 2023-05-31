@@ -38,7 +38,6 @@
   <block id="0115030bcebe3866323eeae397b3cc2a" category="list-text">以*表示的執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP 此儲存設備用作_Flash Cache。Flash Cache 可透過即時智慧快取來加速資料存取、快取最近讀取的使用者資料和 NetApp 中繼資料。它適用於隨機讀取密集的工作負載、包括資料庫、電子郵件和檔案服務。所有磁碟區都必須停用壓縮、才能充分發揮 Flash Cache 效能的改善效益。 <block ref="61905c83e6d030544becf7b42fcf3b4f" category="inline-link-macro-rx"></block>。</block>
   <block id="9cb3b0db1f5a7a0032a165789bcde1dd" category="inline-link-macro">儲存限制</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link">將非作用中資料分層至物件儲存設備</block>
-  <block id="b34f0ba2882e21cdd53fcf8bbcf8d045" category="list-text">在某些組態中、磁碟限制會讓您無法單獨使用磁碟、達到3668 TiB容量限制。在這些情況下、您可以達到3668 TiB容量上限<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>。如需磁碟限制的相關資訊、請參閱 <block ref="53a610dcf7587199eb4a52f4e66be0e7" category="inline-link-macro-rx"></block>。</block>
   <block id="11f741fe0ee39ada647e4516d0574ff2" category="list-text">如果您啟用資料分層、系統的容量限制會維持不變。容量限制包括磁碟和物件儲存設備。</block>
   <block id="57927bd5ebb28db1ff00f85796e81ade" category="list-text">支援資料分層功能的Cloud Volumes ONTAP 功能包括：</block>
   <block id="9de28fbf6817cd511eb799f9575b611d" category="list-text">當您選擇EC2執行個體類型時、可以指定它是共用執行個體或專屬執行個體。</block>
@@ -72,7 +71,6 @@
   <block id="150a34e7bbdf7765066eae5fadb9f919" category="doc">儲存限制</block>
   <block id="ecedb9353641e4bd058af0268a6edce8" category="section-title">依授權提供的最大系統容量</block>
   <block id="7de15f2416b1b598e771303381d1179e" category="paragraph">整個系統的最大容量Cloud Volumes ONTAP 取決於其授權。最大系統容量包括磁碟型儲存設備、以及用於資料分層的物件式儲存設備。NetApp不支援超過此限制。</block>
-  <block id="148046fd691bebd5e071c4977754ebda" category="paragraph">在某些組態中、磁碟限制會讓您無法單獨使用磁碟、達到3668 TiB容量限制。在這些情況下、您可以達到3668 TiB容量上限<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>。如需詳細資料、請參閱下方的容量和磁碟限制。</block>
   <block id="794df3791a8c800841516007427a2aa3" category="cell">授權</block>
   <block id="643a529396d04bbbe61c8daa70456163" category="cell">最大系統容量（磁碟+物件儲存）</block>
   <block id="768560d8110ed230b7fde848941af107" category="cell">2 TiB（Explore不支援資料分層）</block>
@@ -242,7 +240,6 @@
   <block id="d69dddad3d38a1500a52e7e599cb94df" category="paragraph">節點重新開機後、合作夥伴必須先同步資料、才能退回儲存設備。重新同步資料所需的時間取決於節點當機時用戶端寫入的資料量、以及恢復期間的資料寫入速度。</block>
   <block id="feb49be8ef50e34ae8a47a5369859187" category="section-title">AWS C2S環境的限制</block>
   <block id="286cc15dc9f73773a029b936b2788c19" category="inline-link">開始使用AWS C2S環境</block>
-  <block id="e1fd46c84609b96f4458729b4ee8c5ea" category="paragraph">檢視Cloud Manager文件中的限制：<block ref="fd45e509325fef59e1c268c2f62eedf4" category="inline-link-rx"></block></block>
   <block id="3bee858ea6f0b72c5c39cb3bd1c441f0" category="section-title">AWS GovCloud（美國）地區的限制</block>
   <block id="cb272a6dc5e534974a2ae26644e5635f" category="list-text">如果您想要在Cloud Volumes ONTAP 任何AWS GovCloud（美國）區域中啟動執行個體、Cloud Manager必須部署在AWS GovCloud（美國）區域。</block>
   <block id="77cc64ce7fdafcda7deefa3aa250801c" category="list-text">當部署於AWS GovCloud（美國）區域時、Cloud Manager無法在ONTAP 適用於Microsoft Azure組態的NetApp私有儲存設備或適用於SoftLayer組態的NetApp私有儲存設備中探索到各種非功能叢集。</block>
@@ -279,7 +276,6 @@
   <block id="9c4369ea6b2e29931f30698d49e87679" category="summary">包含多項新功能與增強功能。Cloud Volumes ONTAP</block>
   <block id="eefe5eb049dc65c85c62e0f1c7752611" category="doc">更新功能Cloud Volumes ONTAP</block>
   <block id="f9d74313da16b2bb412c1d7c5efd0534" category="inline-link">Cloud Manager版本資訊</block>
-  <block id="62703524dbb4d20326585184b2149d4d" category="admonition">最新版Cloud Manager也會提供其他功能與增強功能。請參閱<block ref="b168941a5dc7eab411ef9dc2c7a220db" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="1f1c990197b8c2e1acd21782391ae66e" category="section-title">9.5 P11（2020年3月6日）</block>
   <block id="4d51ff14f4691186785e9ce841b8db7c" category="inline-link">檢視P11修補程式中修正的錯誤清單</block>
   <block id="b23d51b37d4e276eab6bdf40e900ffa6" category="paragraph">9.5 P11 for Cloud Volumes ONTAP the Sfor NetApp現在可透過Cloud Manager 3.8及更新版本取得。Cloud Manager會提示您將現有系統升級至此修補程式版本。<block ref="dd90a6fc2c06f7c37a1897e712403f0e" category="inline-link-rx"></block> （需要NetApp支援網站登入）。</block>
@@ -301,7 +297,6 @@
   <block id="e4f9d95e1dcf3c09171558a97c6ce988" category="paragraph">9.5 P4 for Cloud Volumes ONTAP the Sfor the Sfor the Sfor the Sfor the NOW現已推出。Cloud Manager會提示您將現有系統升級至此修補程式版本。<block ref="c7bc9e6a09487c864484a1676576609e" category="inline-link-rx"></block> （需要NetApp支援網站登入）。</block>
   <block id="01213065df2ab59b0022c9762ed3c4e1" category="section-title">支援AWS CGS環境（2019年5月2日）</block>
   <block id="dc5e7b4ba25bfb40fdff3c9544d74930" category="paragraph">美國地區現已推出適用於美國地區的S9.5與Cloud Manager 3.6.4 Cloud Volumes ONTAP透過AWS商業雲端服務（C2S）環境提供智慧社群（IC）。您可以在C2S中部署HA配對和單一節點系統。</block>
-  <block id="859cb991a505a12f587a1b2186097048" category="paragraph"><block ref="859cb991a505a12f587a1b2186097048" category="inline-link-rx"></block></block>
   <block id="1dbc408e9d884d0e4045d95937b03203" category="section-title">9.5 P3修補程式（2019年4月25日）</block>
   <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link">檢視P3修補程式中修正的錯誤清單</block>
   <block id="e50fcfe06ae84cfa70a70a4d7d50570b" category="paragraph">9.5 P3版的Cloud Volumes ONTAP 修補程式現已推出。<block ref="2274252e0a74bc68dae9b5de9c1c4ec0" category="inline-link-rx"></block> （需要NetApp支援網站登入）。</block>
@@ -337,7 +332,6 @@
   <block id="a2a629c8cd8ceb36484d412d0c24dd87" category="paragraph">AWS和Microsoft Azure（僅適用於Azure中的單一節點系統）現已推出《一般可用度（GA）》版本Cloud Volumes ONTAP 的更新版本。GA版本包含穩定性修正、AWS中的新功能和過時功能、以及系統容量限制的變更。</block>
   <block id="a37b0234f6bd7d4e970efabe8c66add0" category="section-title">所有Premium和BYOL組態的容量上限為368TB</block>
   <block id="b811af7cde99da9b16b831094ee51af7" category="paragraph">目前、所有組態的系統容量上限Cloud Volumes ONTAP 為368TB、包括AWS和Azure中的單一節點和HA。</block>
-  <block id="bb6102b5c2f4716d1ec1792f0e5e34ff" category="paragraph">在某些組態中、磁碟限制會讓您無法單獨使用磁碟、達到368TB容量限制。在這些情況下、您可以達到368TB容量上限<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>。例如、Azure中的單一節點系統可以有252 TB的磁碟型容量、因此Azure Blob儲存設備最多可容納16 TB的非使用中資料。</block>
   <block id="4eccc0f38152210b74a99e2ea0b34de6" category="paragraph">如需磁碟限制的相關資訊、請參閱 <block ref="53a610dcf7587199eb4a52f4e66be0e7" category="inline-link-macro-rx"></block>。</block>
   <block id="898895e89f0785a3c18ecb0873427e14" category="section-title">支援AWS中的M5和R5執行個體</block>
   <block id="eaca2e1c478630a22e3360f7347128af" category="paragraph">目前支援M5和R5系列的多種執行個體類型：Cloud Volumes ONTAP</block>
@@ -353,25 +347,20 @@
   <block id="2b2f4a969a749ecb25f4a60c31ad59e7" category="paragraph">目前、利用外部金鑰管理伺服器、支援NetApp Volume Encryption。Cloud Volumes ONTAP不支援Onboard Key Manager。您可以在中找到支援的金鑰管理程式<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block> 在*關鍵經理*解決方案下。</block>
   <block id="940295fb696cf9fb112d7c2bfe38d9b9" category="paragraph">您需要從CLI設定NetApp Volume Encryption。然後、您可以使用CLI或System Manager在特定磁碟區上啟用加密功能。Cloud Manager不支援從使用者介面及API進行NetApp Volume Encryption。</block>
   <block id="b65655df2841d290350a57fc1cfce5d8" category="inline-link">瞭解如何設定NetApp Volume Encryption</block>
-  <block id="1ddaa052df69979300a6602a6e49877b" category="paragraph"><block ref="1ddaa052df69979300a6602a6e49877b" category="inline-link-rx"></block></block>
   <block id="4e2b4881fb2c5119091fe991955a24c9" category="admonition">NetApp Volume Encryption是一種不同Cloud Volumes ONTAP 於以集合體層級加密資料的功能、現在已不再使用。無法在這兩種加密技術之間進行升級。請參閱 <block ref="b84892a7f14467dad5dcbfb134701977" category="inline-xref-macro-rx"></block> 以取得更多資訊。</block>
   <block id="a99d5eb9f8c31b25a9fc8d26a04d2197" category="section-title">AWS中已過時的功能</block>
   <block id="5c91c348cf57fcb85afc3f10917f5af9" category="paragraph">9.5版不再支援兩項功能。</block>
   <block id="0ab3970869c85ed15299db987c5ff4b8" category="section-title">目前、支援AWS原生磁碟加密的實體層級加密Cloud Volumes ONTAP</block>
   <block id="20fdf111ee20eb66d095fc51146f2e32" category="inline-link">複寫資料</block>
-  <block id="cbb5c0e040b282425efa20b1abd0f47d" category="paragraph">不再支援使用外部金鑰管理程式之集合體的閒置資料加密。如果您目前正在使用此功能並想要升級、則必須先啟動新的9.5系統、然後再啟動<block ref="3074391010aba6b4d1167dae5fc373ad" category="inline-link-rx"></block> 系統。</block>
   <block id="bf3de96e18992de6767bd02e38afc6fb" category="inline-link">深入瞭解閒置資料的加密</block>
-  <block id="24ecc5524a3c7f9e1a7491be2fd83172" category="paragraph">使用其他方法仍支援閒置資料加密。您可以使用NetApp Volume Encryption或使用AWS金鑰管理服務（KMS）來加密資料。<block ref="666bce0dbee405943fb9ed4bd59ea6ad" category="inline-link-rx"></block>。</block>
   <block id="cd605bfa25c9d934f509218013b8ed4b" category="section-title">不再支援c4.2xLarge</block>
   <block id="d365643d3cd9caef2915320158d6b0db" category="inline-link">變更為新的執行個體類型</block>
-  <block id="e515bcd53de30f9d122a32de868789e4" category="paragraph">9.5版不支援c4.2xLarge執行個體類型。如果您目前使用此執行個體類型、則必須先使用<block ref="09f01dafb402e9482c45b632ff9ba718" category="inline-link-rx"></block> 升級至9.5版之前。</block>
   <block id="353bd68f870334d4c996e4b09f96da56" category="section-title">9.5 RC1 for Azure（2018年12月4日）</block>
   <block id="7c57df3e8165658a656d7d067fcf680a" category="paragraph">Microsoft Azure現已推出更新版的RC9.5 RC1。Cloud Volumes ONTAP9.5版將於稍後在AWS中提供。</block>
   <block id="fbf37ccefbfe212070308b37158f46d4" category="section-title">在Microsoft Azure中預覽高可用度（HA）配對</block>
   <block id="bf7b606732a0d622a028cd023e694cee" category="paragraph">Microsoft Azure中的「更新版」現已推出更新版本Cloud Volumes ONTAP 。HA配對可在雲端環境發生故障時、提供企業級的可靠性和持續運作。與實體ONTAP 的實體叢集類似、Azure HA配對中的儲存設備會在兩個節點之間共用。</block>
   <block id="7180f9d76025c40d8a1015c64c3f8810" category="paragraph">Azure中的HA配對可供預覽。如需預覽授權、請聯絡我們：ng-Cloud-Volume-ONTAP-preview@netapp.com。</block>
   <block id="591d98c02300a1802a9db0fa1ef0bc4e" category="inline-link">深入瞭解Azure中的HA配對</block>
-  <block id="080e4144468cae01039baac123333b3a" category="paragraph"><block ref="3cae77d1468cb01b85ffa23c2064fd4b" category="inline-link-rx"></block>。</block>
   <block id="62a371f33d14a948bfa0f25af7a0295e" category="section-title">提升Azure的網路效能</block>
   <block id="3b58b79c7fd8f49d8c28176b202ef590" category="inline-link">加速網路</block>
   <block id="fdb27bb1b3d482de9b19022f379140dc" category="paragraph">支援的支援系統Cloud Volumes ONTAP<block ref="808613bd4b83389fee4b2d59593ef36b" category="inline-link-rx"></block> 在Azure中。當您升級至9.5版、並部署新的9.5版系統時、Cloud Manager可加速網路連線。</block>
@@ -395,8 +384,19 @@
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">解決方案ONTAP</block>
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896 TiB</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
   <block id="b7a391ba538fb8a6830548a168a702ed" category="section-title">不支援新部署</block>
   <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">對於HA、每個節點或整個HA配對的授權容量限制是多少？</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">對於AWS中的HA系統、鏡射資料是否會根據容量限制計算？</block>
+  <block id="e531d216b691e10b8bccaa1208e30e27" category="list-text">在某些組態中、磁碟限制會讓您無法單獨使用磁碟、達到3668 TiB容量限制。在這些情況下、您可以達到3668 TiB容量上限<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。如需磁碟限制的相關資訊、請參閱 <block ref="53a610dcf7587199eb4a52f4e66be0e7" category="inline-link-macro-rx"></block>。</block>
+  <block id="4e246e96cabc7775acdfd5f60f1195eb" category="paragraph">在某些組態中、磁碟限制會讓您無法單獨使用磁碟、達到3668 TiB容量限制。在這些情況下、您可以達到3668 TiB容量上限<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。如需詳細資料、請參閱下方的容量和磁碟限制。</block>
+  <block id="6ed74a41a62734e492094462d818e839" category="paragraph">檢視Cloud Manager文件中的限制：<block ref="39ce2d41c9ed9c2da4c4794ff62efcad" category="inline-link-rx"></block></block>
+  <block id="6d43452380cd21cb4417b9a1824c3ac4" category="admonition">最新版Cloud Manager也會提供其他功能與增強功能。請參閱<block ref="ae983c0a7ee8a786f01e9cc8530d422b" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="cd5ba1a27f2544e6a2d5a44306862b60" category="paragraph"><block ref="cd5ba1a27f2544e6a2d5a44306862b60" category="inline-link-rx"></block></block>
+  <block id="3f524993eb53f5dbe38194bfc2044c91" category="paragraph">在某些組態中、磁碟限制會讓您無法單獨使用磁碟、達到368TB容量限制。在這些情況下、您可以達到368TB容量上限<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>。例如、Azure中的單一節點系統可以有252 TB的磁碟型容量、因此Azure Blob儲存設備最多可容納16 TB的非使用中資料。</block>
+  <block id="4bf3424f870212601fb61ea6605fd597" category="paragraph"><block ref="4bf3424f870212601fb61ea6605fd597" category="inline-link-rx"></block></block>
+  <block id="ca4be25d4ec6c2c8febab9bf74592faa" category="paragraph">不再支援使用外部金鑰管理程式之集合體的閒置資料加密。如果您目前正在使用此功能並想要升級、則必須先啟動新的9.5系統、然後再啟動<block ref="c2ced3d62ddecd9a289d206cef5dcadf" category="inline-link-rx"></block> 系統。</block>
+  <block id="c5d198b1aeff3237e133fcea60d3039c" category="paragraph">使用其他方法仍支援閒置資料加密。您可以使用NetApp Volume Encryption或使用AWS金鑰管理服務（KMS）來加密資料。<block ref="afbe1fb59edcd7d2e2cc1e6be7740d2e" category="inline-link-rx"></block>。</block>
+  <block id="0209bacb71424ba104a8bb410d149339" category="paragraph">9.5版不支援c4.2xLarge執行個體類型。如果您目前使用此執行個體類型、則必須先使用<block ref="28595755cd198f10eb2d2420963cc9dc" category="inline-link-rx"></block> 升級至9.5版之前。</block>
+  <block id="1ab4ecc8b83742de5404f0a7e3289a0c" category="paragraph"><block ref="6323bcac8e680fcfc681b7895d7db259" category="inline-link-rx"></block>。</block>
+  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
 </blocks>

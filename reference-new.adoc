@@ -17,7 +17,7 @@ summary: 包含多項新功能與增強功能。Cloud Volumes ONTAP
 包含多項新功能與增強功能。Cloud Volumes ONTAP
 
 
-NOTE: 最新版Cloud Manager也會提供其他功能與增強功能。請參閱 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager版本資訊"^] 以取得詳細資料。
+NOTE: 最新版Cloud Manager也會提供其他功能與增強功能。請參閱 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Cloud Manager版本資訊"^] 以取得詳細資料。
 
 
 
@@ -64,7 +64,7 @@ NOTE: Cloud Manager會提示您升級至ONTAP 特定的更新版本、其中包�
 
 美國地區現已推出適用於美國地區的S9.5與Cloud Manager 3.6.4 Cloud Volumes ONTAP透過AWS商業雲端服務（C2S）環境提供智慧社群（IC）。您可以在C2S中部署HA配對和單一節點系統。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["開始使用AWS C2S環境"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["開始使用AWS C2S環境"^]
 
 
 
@@ -147,7 +147,7 @@ AWS和Microsoft Azure（僅適用於Azure中的單一節點系統）現已推出
 
 目前、所有組態的系統容量上限Cloud Volumes ONTAP 為368TB、包括AWS和Azure中的單一節點和HA。
 
-在某些組態中、磁碟限制會讓您無法單獨使用磁碟、達到368TB容量限制。在這些情況下、您可以達到368TB容量上限 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。例如、Azure中的單一節點系統可以有252 TB的磁碟型容量、因此Azure Blob儲存設備最多可容納16 TB的非使用中資料。
+在某些組態中、磁碟限制會讓您無法單獨使用磁碟、達到368TB容量限制。在這些情況下、您可以達到368TB容量上限 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["將非作用中資料分層至物件儲存設備"^]。例如、Azure中的單一節點系統可以有252 TB的磁碟型容量、因此Azure Blob儲存設備最多可容納16 TB的非使用中資料。
 
 如需磁碟限制的相關資訊、請參閱 link:reference-storage-limits.html["儲存限制"]。
 
@@ -193,7 +193,7 @@ https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption（NVE）"^
 
 您需要從CLI設定NetApp Volume Encryption。然後、您可以使用CLI或System Manager在特定磁碟區上啟用加密功能。Cloud Manager不支援從使用者介面及API進行NetApp Volume Encryption。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何設定NetApp Volume Encryption"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何設定NetApp Volume Encryption"^]
 
 
 NOTE: NetApp Volume Encryption是一種不同Cloud Volumes ONTAP 於以集合體層級加密資料的功能、現在已不再使用。無法在這兩種加密技術之間進行升級。請參閱 <<AWS中已過時的功能>> 以取得更多資訊。
@@ -208,15 +208,15 @@ NOTE: NetApp Volume Encryption是一種不同Cloud Volumes ONTAP 於以集合體
 
 ==== 目前、支援AWS原生磁碟加密的實體層級加密Cloud Volumes ONTAP
 
-不再支援使用外部金鑰管理程式之集合體的閒置資料加密。如果您目前正在使用此功能並想要升級、則必須先啟動新的9.5系統、然後再啟動 https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["複寫資料"] 系統。
+不再支援使用外部金鑰管理程式之集合體的閒置資料加密。如果您目前正在使用此功能並想要升級、則必須先啟動新的9.5系統、然後再啟動 https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["複寫資料"] 系統。
 
-使用其他方法仍支援閒置資料加密。您可以使用NetApp Volume Encryption或使用AWS金鑰管理服務（KMS）來加密資料。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-security.html["深入瞭解閒置資料的加密"^]。
+使用其他方法仍支援閒置資料加密。您可以使用NetApp Volume Encryption或使用AWS金鑰管理服務（KMS）來加密資料。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-security.html["深入瞭解閒置資料的加密"^]。
 
 
 
 ==== 不再支援c4.2xLarge
 
-9.5版不支援c4.2xLarge執行個體類型。如果您目前使用此執行個體類型、則必須先使用 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["變更為新的執行個體類型"] 升級至9.5版之前。
+9.5版不支援c4.2xLarge執行個體類型。如果您目前使用此執行個體類型、則必須先使用 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["變更為新的執行個體類型"] 升級至9.5版之前。
 
 
 
@@ -232,7 +232,7 @@ Microsoft Azure中的「更新版」現已推出更新版本Cloud Volumes ONTAP 
 
 Azure中的HA配對可供預覽。如需預覽授權、請聯絡我們：ng-Cloud-Volume-ONTAP-preview@netapp.com。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html["深入瞭解Azure中的HA配對"^]。
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["深入瞭解Azure中的HA配對"^]。
 
 
 
@@ -256,7 +256,7 @@ https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption（NVE）"^
 
 您需要從CLI設定NetApp Volume Encryption。然後、您可以使用CLI或System Manager在特定磁碟區上啟用加密功能。Cloud Manager目前不支援NetApp Volume Encryption。
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何設定NetApp Volume Encryption"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html["瞭解如何設定NetApp Volume Encryption"^]
 
 
 

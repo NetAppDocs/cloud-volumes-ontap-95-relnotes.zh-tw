@@ -112,7 +112,7 @@ C5D和R5D執行個體類型包括本機NVMe儲存設備、Cloud Volumes ONTAP �
 
 === AWS C2S環境的限制
 
-檢視Cloud Manager文件中的限制： https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws-c2s.html["開始使用AWS C2S環境"^]
+檢視Cloud Manager文件中的限制： https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["開始使用AWS C2S環境"^]
 
 
 
