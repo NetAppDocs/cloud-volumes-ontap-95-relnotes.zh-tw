@@ -62,28 +62,6 @@ sidebar:
     url: "/reference-limitations.html"
   - title: 法律聲明
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: 開始使用
-    links:
-    - title: 新增功能
-      url: reference-new.html
-  - title: 組態與限制
-    links:
-    - title: 支援的組態
-      url: reference-supported-configs.html
-    - title: 儲存限制
-      url: reference-storage-limits.html
-    - title: 限制
-      url: reference-limitations.html
-  - title: 部落格社群
-    links:
-    - title: NetApp社群
-      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: Cloud Central部落格
-      url: https://cloud.netapp.com/blog
-    - title: 雲端網路研討會
-      url: https://cloud.netapp.com/events
 product-family:
   name: BlueXP
   repo: bluexp-family
