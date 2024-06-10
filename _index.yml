@@ -1,0 +1,28 @@
+---
+indexpage:
+  title: 發行說明Cloud Volumes ONTAP
+  summary: 這些版本說明介紹Cloud Volumes ONTAP 具體針對哪些功能、限制和已知問題。
+  keywords: cloud volumes ontap, licensing, security, release notes, storage, data
+    protection, configuration, upgrade, encryption, cvo, 95
+  lead: 這些版本說明介紹Cloud Volumes ONTAP 具體針對哪些功能、限制和已知問題。
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 新增功能
+      url: reference-new.html
+  - title: 組態與限制
+    links:
+    - title: 支援的組態
+      url: reference-supported-configs.html
+    - title: 儲存限制
+      url: reference-storage-limits.html
+    - title: 限制
+      url: reference-limitations.html
+  - title: 部落格社群
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central部落格
+      url: https://cloud.netapp.com/blog
+    - title: 雲端網路研討會
+      url: https://cloud.netapp.com/events
