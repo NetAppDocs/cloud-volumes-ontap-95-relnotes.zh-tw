@@ -187,7 +187,7 @@ AWS和Microsoft Azure（僅適用於Azure中的單一節點系統）現已推出
 
 === 支援AWS中的NetApp Volume Encryption
 
-https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption（NVE）"^] 是一項軟體技術、可一次加密一個磁碟區的閒置資料。資料、Snapshot複本和中繼資料都會加密。資料的存取權是由唯一的XTS-AES-256金鑰提供、每個磁碟區一個金鑰。
+https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption（NVE）"^] 是一種軟體型技術、可一次將靜態磁碟區中的資料加密。資料、Snapshot複本和中繼資料都會加密。資料的存取權是由唯一的XTS-AES-256金鑰提供、每個磁碟區一個金鑰。
 
 目前、利用外部金鑰管理伺服器、支援NetApp Volume Encryption。Cloud Volumes ONTAP不支援Onboard Key Manager。您可以在中找到支援的金鑰管理程式 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 在*關鍵經理*解決方案下。
 
@@ -250,7 +250,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["
 
 === 支援Azure中的NetApp Volume Encryption
 
-https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption（NVE）"^] 是一項軟體技術、可一次加密一個磁碟區的閒置資料。資料、Snapshot複本和中繼資料都會加密。資料的存取權是由唯一的XTS-AES-256金鑰提供、每個磁碟區一個金鑰。
+https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption（NVE）"^] 是一種軟體型技術、可一次將靜態磁碟區中的資料加密。資料、Snapshot複本和中繼資料都會加密。資料的存取權是由唯一的XTS-AES-256金鑰提供、每個磁碟區一個金鑰。
 
 目前、利用外部金鑰管理伺服器、支援NetApp Volume Encryption。Cloud Volumes ONTAP不支援Onboard Key Manager。您可以在中找到支援的金鑰管理程式 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 在*關鍵經理*解決方案下。
 
