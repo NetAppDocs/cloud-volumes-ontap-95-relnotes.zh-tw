@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Cloud Volumes ONTAP release notes
+  name: Cloud Volumes ONTAP
   downlevel: true
   platform: cloud
   internal:
@@ -49,10 +49,10 @@ settings:
     url: "/cloud-volumes-ontap-94-relnotes"
   - version-number: '9.3'
     url: "/cloud-volumes-ontap-93-relnotes"
-  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
+  langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
 sidebar:
   entries:
-  - title: 版本資訊首頁
+  - title: Cloud Volumes ONTAP 9.5 版本資訊
     url: "/index.html"
   - title: 新增功能
     url: "/reference-new.html"

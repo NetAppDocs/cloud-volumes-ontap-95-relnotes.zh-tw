@@ -66,7 +66,6 @@
   <block id="1aa6c2acb5444fe5b5a93f7daa554347" category="cell">最大系統容量</block>
   <block id="b77f0f3e9fd2f5fef4d366d77b1ef0cf" category="list-text">HA配對不支援資料分層。</block>
   <block id="86356f570acc8683cfbf184efa49892d" category="summary">這些版本說明介紹Cloud Volumes ONTAP 具體針對哪些功能、限制和已知問題。</block>
-  <block id="543ec7e9ddd2b6bc0d9506114c6dda6f" category="doc">發行說明Cloud Volumes ONTAP</block>
   <block id="b3dfe19c7d46d1f8795ac17bf3d5a909" category="summary">提供可靠作業的儲存組態限制。Cloud Volumes ONTAP為獲得最佳效能、請勿將系統設定為最大值。</block>
   <block id="150a34e7bbdf7765066eae5fadb9f919" category="doc">儲存限制</block>
   <block id="ecedb9353641e4bd058af0268a6edce8" category="section-title">依授權提供的最大系統容量</block>
@@ -367,7 +366,6 @@
   <block id="77fc7cf72a29c8c6c88ed457fcdd2f3c" category="list-text">您可以從Cloud Volumes ONTAP 9.4版升級至S49.5版。</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">單一節點系統的升級可讓系統離線長達25分鐘、在此期間I/O會中斷。</block>
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">升級 HA 配對不中斷營運、而且 I/O 不中斷。在此不中斷營運的升級程序中、會同時升級每個節點、以繼續為用戶端提供 I/O 服務。</block>
-  <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">版本資訊首頁</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="e19968c5ebc4b94a271992f4b0563be8" category="sidebar">組態與限制</block>
@@ -400,4 +398,5 @@
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="7c9d324d1d8b491ad2ad038c3ae1a08d" category="paragraph"><block ref="88f79bf25d1193134b67da843a562378" category="inline-link-rx"></block> 是一種軟體型技術、可一次將靜態磁碟區中的資料加密。資料、Snapshot複本和中繼資料都會加密。資料的存取權是由唯一的XTS-AES-256金鑰提供、每個磁碟區一個金鑰。</block>
+  <block id="768e5fecad4c27b08f9ffd5fd34e1330" category="sidebar">Cloud Volumes ONTAP 9.5 版本資訊</block>
 </blocks>
