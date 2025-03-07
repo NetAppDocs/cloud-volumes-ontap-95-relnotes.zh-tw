@@ -44,7 +44,6 @@
   <block id="90088be3adb232b22e0087f5c0dfa678" category="list-text">HA配對不支援冷硬碟。</block>
   <block id="17105d87ead215069c8de1fbcc539db6" category="list-text">使用EBS SSD搭配Cloud Volumes ONTAP 使用時、可啟用增強的寫入效能、包括ESSE- Standard、Premium和BYOL。</block>
   <block id="a3f8304ab1695053d71855c60f8abf63" category="inline-link">Cloud Volumes全球區域</block>
-  <block id="4375839c669e051e5f2a8de11ba0c5d0" category="list-text">如需AWS區域支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="2544021bbaa4bc6eadfddbb17edf7811" category="section-title">適用於 Azure Cloud Volumes ONTAP</block>
   <block id="439b8a07189772d0c98983ce22685918" category="paragraph">在Azure中、Cloud Volumes ONTAP 您可以將不完整的功能部署為單一節點系統或HA配對。</block>
   <block id="078325cc35a9c8c9290e445f32bd1855" category="section-title">單一節點系統</block>
@@ -58,7 +57,6 @@
   <block id="50bb513ae39b44421d182e4072a83998" category="cell">標準HDD託管磁碟、標準SSD託管磁碟和優質SSD託管磁碟、每個磁碟最多32 TiB</block>
   <block id="d448e5e37b82dc9cd3ec041340cd7253" category="list-text">DS3_v2虛擬機器類型不支援資料分層。</block>
   <block id="d6b23a41a85f490ae75b43cb4095d8c0" category="list-text">使用Azure Premium Storage磁碟時會啟用增強寫入效能、但使用DS3_v2虛擬機器類型時則不會啟用。</block>
-  <block id="7c7627c6477255acb2239bd1be90f346" category="list-text">如需Azure地區支援、請參閱<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>。</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">HA 配對</block>
   <block id="a2f04bcb45cecb780dad3d2795f4e080" category="paragraph">在Cloud Volumes ONTAP Azure中部署以HA配對形式部署的時、您可以從下列組態中進行選擇：</block>
   <block id="aa7f77e663b832d5b0e544c5511e680c" category="cell">不支援</block>
@@ -253,7 +251,6 @@
   <block id="bd9f3210b7c4e1dfb162268596a29363" category="list-text">不支援 NFSv4 。支援 NFSv3 。</block>
   <block id="74522068eb4d7b9d888846015e92c07a" category="list-text">某些地區不支援 HA 配對。</block>
   <block id="1538d38eb23a96781db500ec7bd30195" category="inline-link">請參閱支援的 Azure 地區清單</block>
-  <block id="f5b8e6c4c4b082cf610f078e361a727f" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block>。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
@@ -306,7 +303,6 @@
   <block id="fe6df44a9d70c01de724da265530b0d2" category="section-title">美國Azure Central區域的HA支援（2019年3月25日）</block>
   <block id="1417340e9f15685d8f4814b72dd81c2d" category="paragraph">目前Azure的美國中部地區支援HA配對。</block>
   <block id="4a977616fcd7ade62dbf55a1f8db1bd0" category="inline-link">請參閱支援的Azure地區完整清單</block>
-  <block id="07a1c66013de0c57f2bd7d69d3354c41" category="paragraph"><block ref="0f846b36f06a975303e325a2ffb2c92b" category="inline-link-rx"></block>。</block>
   <block id="a214545074aff7a12db7be5c3411e5f3" category="section-title">9.5 P1修補程式（2019年3月18日）</block>
   <block id="86b05ab8e0392045b506cb6f3482ac50" category="paragraph">9.5 P1版的Cloud Volumes ONTAP 更新版適用於所有組態。Cloud Manager會提示您將現有系統升級至此修補程式版本。</block>
   <block id="e32ea6753fc1e0dc2dafd4f1157260e0" category="paragraph">如果您在Azure中已有HA配對、NetApp將會聯絡您、協助您套用P1修補程式版本。</block>
@@ -322,7 +318,6 @@
   <block id="e74523dfd57d69116c6dc03759fe0a7b" category="list-text">美國中西部</block>
   <block id="a8893363a2924d8d1c0816bdb4a0ee72" category="paragraph">這些地區的維護作業可防止Cloud Volumes ONTAP 建立不完整的功能、並防止發生容錯移轉。我們計畫在維護完成後立即支援這些區域。</block>
   <block id="bc65177d9fd008caca5b0105a76cd89b" category="inline-link">請參閱完整的支援Azure地區清單</block>
-  <block id="a98fce804b2db5bb3bc16f3fd91e4894" category="paragraph"><block ref="b01a780abce559d6649a48ba9b858ca7" category="inline-link-rx"></block>。</block>
   <block id="5c3ae5e8064b906f78f689ea334bf839" category="section-title">AWS和Azure 9.5 GA（2019年2月4日）</block>
   <block id="a2a629c8cd8ceb36484d412d0c24dd87" category="paragraph">AWS和Microsoft Azure（僅適用於Azure中的單一節點系統）現已推出《一般可用度（GA）》版本Cloud Volumes ONTAP 的更新版本。GA版本包含穩定性修正、AWS中的新功能和過時功能、以及系統容量限制的變更。</block>
   <block id="a37b0234f6bd7d4e970efabe8c66add0" category="section-title">所有Premium和BYOL組態的容量上限為368TB</block>
@@ -399,4 +394,9 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="7c9d324d1d8b491ad2ad038c3ae1a08d" category="paragraph"><block ref="88f79bf25d1193134b67da843a562378" category="inline-link-rx"></block> 是一種軟體型技術、可一次將靜態磁碟區中的資料加密。資料、Snapshot複本和中繼資料都會加密。資料的存取權是由唯一的XTS-AES-256金鑰提供、每個磁碟區一個金鑰。</block>
   <block id="768e5fecad4c27b08f9ffd5fd34e1330" category="sidebar">Cloud Volumes ONTAP 9.5 版本資訊</block>
+  <block id="16037845f27c88646572392cae4cc963" category="paragraph"><block ref="26f113c6240bf0450440356676516cf1" category="inline-link-rx"></block>。</block>
+  <block id="045622dfb07c6145c4ccaf9f2078e56b" category="paragraph"><block ref="782e925b243dc89a59a0bc67d50ce99b" category="inline-link-rx"></block>。</block>
+  <block id="f99c30ec26c64d7fcf92dc4cc9aba95f" category="paragraph"><block ref="71d5ab1d1cf6cb7dfc6c6d8e7906da1b" category="inline-link-rx"></block>。</block>
+  <block id="0890aa708cef7529c2bd35cb7d2895df" category="list-text">如需 AWS 區域支援<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>、請參閱。</block>
+  <block id="f0de068c81c765820aca0fa8fe017396" category="list-text">如需 Azure 區域支援<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>、請參閱。</block>
 </blocks>

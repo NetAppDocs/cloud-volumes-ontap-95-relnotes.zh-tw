@@ -82,7 +82,7 @@ AWS和Azure提供下列兩種定價選項：隨用隨付及自帶授權（BYOL�
 . 當您選擇EC2執行個體類型時、可以指定它是共用執行個體或專屬執行個體。
 . HA配對不支援冷硬碟。
 . 使用EBS SSD搭配Cloud Volumes ONTAP 使用時、可啟用增強的寫入效能、包括ESSE- Standard、Premium和BYOL。
-. 如需AWS區域支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+. 如需 AWS 區域支援 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]、請參閱。
 
 
 
@@ -130,7 +130,7 @@ AWS和Azure提供下列兩種定價選項：隨用隨付及自帶授權（BYOL�
 . 如果您啟用資料分層、系統的容量限制會維持不變。容量限制包括磁碟和物件儲存設備。
 . DS3_v2虛擬機器類型不支援資料分層。
 . 使用Azure Premium Storage磁碟時會啟用增強寫入效能、但使用DS3_v2虛擬機器類型時則不會啟用。
-. 如需Azure地區支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+. 如需 Azure 區域支援 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]、請參閱。
 
 
 
@@ -169,5 +169,5 @@ AWS和Azure提供下列兩種定價選項：隨用隨付及自帶授權（BYOL�
 附註：
 
 . HA配對不支援資料分層。
-. 如需Azure地區支援、請參閱 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]。
+. 如需 Azure 區域支援 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes全球區域"^]、請參閱。
 
